@@ -9,32 +9,32 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light blue-gray background */
-            color: #333;
+            background-color: #000000; /* Black background */
+            color: #FFD700; /* Gold text */
             overflow-x: hidden; /* Prevent horizontal scrolling */
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: #ffffff;
+            background-color: #1A1A1A; /* Dark gray background for container */
             border-radius: 1rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1); /* Gold shadow */
         }
         .section-card {
-            background-color: #ffffff;
+            background-color: #111111; /* Very dark gray for cards */
             border-radius: 0.75rem;
             padding: 1.5rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.08); /* Gold shadow */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            border: 1px solid #e0e7ff; /* Light blue border */
+            border: 1px solid #FFD700; /* Gold border */
         }
         .section-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15); /* Gold shadow on hover */
         }
         .section-card::before {
             content: '';
@@ -43,7 +43,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, #60a5fa, #3b82f6); /* Blue gradient top border */
+            background: linear-gradient(90deg, #DAA520, #FFD700); /* Gold gradient top border */
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.3s ease-out;
@@ -59,7 +59,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.8); /* Darker overlay for better contrast */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -73,7 +73,8 @@
             visibility: visible;
         }
         .modal-content {
-            background-color: #ffffff;
+            background-color: #1A1A1A; /* Dark gray background for modal content */
+            color: #FFD700; /* Gold text for modal */
             border-radius: 1rem;
             padding: 2.5rem;
             position: relative;
@@ -82,7 +83,7 @@
             transform: translateY(20px);
             opacity: 0;
             transition: transform 0.3s ease, opacity 0.3s ease;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.2); /* Gold shadow */
         }
         .modal-overlay.active .modal-content {
             transform: translateY(0);
@@ -95,13 +96,13 @@
             background: none;
             border: none;
             font-size: 2rem;
-            color: #6b7280;
+            color: #FFD700; /* Gold color for close button */
             cursor: pointer;
             transition: color 0.2s ease;
             line-height: 1;
         }
         .close-button:hover {
-            color: #ef4444; /* Red on hover */
+            color: #FFFACD; /* Lighter Gold on hover */
         }
 
         /* Keyframe for simple pulse animation on icons */
@@ -119,12 +120,12 @@
             width: 48px;
             height: 48px;
             margin-bottom: 1rem;
-            fill: #3b82f6; /* Default icon color */
+            fill: #FFD700; /* Gold icon color */
         }
         .icon-small {
             width: 24px;
             height: 24px;
-            fill: #60a5fa;
+            fill: #FFD700; /* Gold icon color */
             display: inline-block;
             vertical-align: middle;
             margin-right: 0.5rem;
@@ -146,10 +147,10 @@
 <body class="p-4 md:p-8">
 
     <div class="container">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6 md:mb-10 text-gray-800">
-            <span class="text-blue-600">AI's Transformative</span> Influence in Healthcare
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6 md:mb-10" style="color: #FFD700;">
+            <span style="color: #FFD700;">AI's Transformative</span> Influence in Healthcare
         </h1>
-        <p class="text-lg text-center text-gray-600 mb-8 md:mb-12 max-w-3xl mx-auto">
+        <p class="text-lg text-center mb-8 md:mb-12 max-w-3xl mx-auto" style="color: #DAA520;">
             Explore how Artificial Intelligence is revolutionizing health systems, from diagnostics to personalized treatments. Click on each section for detailed insights.
         </p>
 
@@ -162,8 +163,8 @@
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/>
                     </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-center mb-2 text-gray-700">Enhanced Diagnostics</h2>
-                <p class="text-sm text-center text-gray-500">Accelerating disease detection and accuracy.</p>
+                <h2 class="text-xl font-semibold text-center mb-2" style="color: #FFD700;">Enhanced Diagnostics</h2>
+                <p class="text-sm text-center" style="color: #DAA520;">Accelerating disease detection and accuracy.</p>
             </div>
 
             <!-- Section 2: Drug Discovery & Development -->
@@ -173,8 +174,8 @@
                         <path d="M13 14H11V9H13V14ZM12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20Z"/>
                     </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-center mb-2 text-gray-700">Drug Discovery & Development</h2>
-                <p class="text-sm text-center text-gray-500">Speeding up innovation in pharmaceuticals.</p>
+                <h2 class="text-xl font-semibold text-center mb-2" style="color: #FFD700;">Drug Discovery & Development</h2>
+                <p class="text-sm text-center" style="color: #DAA520;">Speeding up innovation in pharmaceuticals.</p>
             </div>
 
             <!-- Section 3: Personalized Medicine -->
@@ -184,8 +185,8 @@
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.38 0 2.5 1.12 2.5 2.5S13.38 10 12 10 9.5 8.88 9.5 7.5 10.62 5 12 5zm-3.5 6h7c.83 0 1.5.67 1.5 1.5v4.5H8v-4.5c0-.83.67-1.5 1.5-1.5z"/>
                     </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-center mb-2 text-gray-700">Personalized Medicine</h2>
-                <p class="text-sm text-center text-gray-500">Tailoring treatments to individual patients.</p>
+                <h2 class="text-xl font-semibold text-center mb-2" style="color: #FFD700;">Personalized Medicine</h2>
+                <p class="text-sm text-center" style="color: #DAA520;">Tailoring treatments to individual patients.</p>
             </div>
 
             <!-- Section 4: Operational Efficiency -->
@@ -195,8 +196,8 @@
                         <path d="M19 12h-2V8h-2v4h-2V8h-2v4H9V8H7v4H5V8H3v8h18V8h-2v4zm0 2h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zM5 4h14v2H5z"/>
                     </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-center mb-2 text-gray-700">Operational Efficiency</h2>
-                <p class="text-sm text-center text-gray-500">Optimizing hospital workflows and resource allocation.</p>
+                <h2 class="text-xl font-semibold text-center mb-2" style="color: #FFD700;">Operational Efficiency</h2>
+                <p class="text-sm text-center" style="color: #DAA520;">Optimizing hospital workflows and resource allocation.</p>
             </div>
 
             <!-- Section 5: Patient Engagement & Remote Monitoring -->
@@ -206,8 +207,8 @@
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5zM12 7c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2z"/>
                     </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-center mb-2 text-gray-700">Patient Engagement</h2>
-                <p class="text-sm text-center text-gray-500">Empowering patients through smart tools.</p>
+                <h2 class="text-xl font-semibold text-center mb-2" style="color: #FFD700;">Patient Engagement</h2>
+                <p class="text-sm text-center" style="color: #DAA520;">Empowering patients through smart tools.</p>
             </div>
 
             <!-- Section 6: Research & Development -->
@@ -217,8 +218,8 @@
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                 </div>
-                <h2 class="text-xl font-semibold text-center mb-2 text-gray-700">Research & Development</h2>
-                <p class="text-sm text-center text-gray-500">Accelerating scientific breakthroughs.</p>
+                <h2 class="text-xl font-semibold text-center mb-2" style="color: #FFD700;">Research & Development</h2>
+                <p class="text-sm text-center" style="color: #DAA520;">Accelerating scientific breakthroughs.</p>
             </div>
 
         </div>
@@ -228,20 +229,20 @@
     <div id="diagnostics-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button">&times;</button>
-            <h3 class="text-3xl font-bold text-blue-600 mb-4">Enhanced Diagnostics</h3>
-            <p class="text-gray-700 text-lg mb-4">AI excels in analyzing medical images and complex data sets, leading to more accurate and earlier diagnoses.</p>
-            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <h3 class="text-3xl font-bold mb-4" style="color: #FFD700;">Enhanced Diagnostics</h3>
+            <p class="text-lg mb-4" style="color: #DAA520;">AI excels in analyzing medical images and complex data sets, leading to more accurate and earlier diagnoses.</p>
+            <ul class="list-disc pl-5 space-y-2" style="color: #DAA520;">
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>
-                    <strong>Image Analysis:</strong> AI algorithms can detect subtle patterns in X-rays, MRIs, CT scans, and pathology slides, often outperforming human interpretation in speed and consistency.
+                    <strong style="color: #FFD700;">Image Analysis:</strong> AI algorithms can detect subtle patterns in X-rays, MRIs, CT scans, and pathology slides, often outperforming human interpretation in speed and consistency.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>
-                    <strong>Early Disease Detection:</strong> Identifying biomarkers or early signs of diseases like cancer, Alzheimer's, or heart conditions before symptoms appear.
+                    <strong style="color: #FFD700;">Early Disease Detection:</strong> Identifying biomarkers or early signs of diseases like cancer, Alzheimer's, or heart conditions before symptoms appear.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg>
-                    <strong>Risk Prediction:</strong> Predicting patient risk for various conditions based on genetic data, lifestyle, and medical history.
+                    <strong style="color: #FFD700;">Risk Prediction:</strong> Predicting patient risk for various conditions based on genetic data, lifestyle, and medical history.
                 </li>
             </ul>
         </div>
@@ -250,20 +251,20 @@
     <div id="drug-discovery-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button">&times;</button>
-            <h3 class="text-3xl font-bold text-blue-600 mb-4">Drug Discovery & Development</h3>
-            <p class="text-gray-700 text-lg mb-4">AI significantly accelerates the lengthy and expensive process of bringing new drugs to market.</p>
-            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <h3 class="text-3xl font-bold mb-4" style="color: #FFD700;">Drug Discovery & Development</h3>
+            <p class="text-lg mb-4" style="color: #DAA520;">AI significantly accelerates the lengthy and expensive process of bringing new drugs to market.</p>
+            <ul class="list-disc pl-5 space-y-2" style="color: #DAA520;">
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14H11V9H13V14ZM12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20Z"/></svg>
-                    <strong>Target Identification:</strong> Identifying potential drug targets by analyzing vast biological datasets and disease pathways.
+                    <strong style="color: #FFD700;">Target Identification:</strong> Identifying potential drug targets by analyzing vast biological datasets and disease pathways.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14H11V9H13V14ZM12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20Z"/></svg>
-                    <strong>Compound Design & Synthesis:</strong> Generating novel molecular structures and predicting their efficacy and toxicity, reducing the need for costly wet-lab experiments.
+                    <strong style="color: #FFD700;">Compound Design & Synthesis:</strong> Generating novel molecular structures and predicting their efficacy and toxicity, reducing the need for costly wet-lab experiments.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M13 14H11V9H13V14ZM12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20Z"/></svg>
-                    <strong>Clinical Trial Optimization:</strong> Identifying suitable patient cohorts for trials and analyzing trial data more efficiently.
+                    <strong style="color: #FFD700;">Clinical Trial Optimization:</strong> Identifying suitable patient cohorts for trials and analyzing trial data more efficiently.
                 </li>
             </ul>
         </div>
@@ -272,20 +273,20 @@
     <div id="personalized-medicine-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button">&times;</button>
-            <h3 class="text-3xl font-bold text-blue-600 mb-4">Personalized Medicine</h3>
-            <p class="text-gray-700 text-lg mb-4">AI enables highly individualized healthcare, moving away from a 'one-size-fits-all' approach.</p>
-            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <h3 class="text-3xl font-bold mb-4" style="color: #FFD700;">Personalized Medicine</h3>
+            <p class="text-lg mb-4" style="color: #DAA520;">AI enables highly individualized healthcare, moving away from a 'one-size-fits-all' approach.</p>
+            <ul class="list-disc pl-5 space-y-2" style="color: #DAA520;">
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.38 0 2.5 1.12 2.5 2.5S13.38 10 12 10 9.5 8.88 9.5 7.5 10.62 5 12 5zm-3.5 6h7c.83 0 1.5.67 1.5 1.5v4.5H8v-4.5c0-.83.67-1.5 1.5-1.5z"/></svg>
-                    <strong>Genomic Analysis:</strong> Analyzing an individual's genetic makeup to predict disease susceptibility and drug response.
+                    <strong style="color: #FFD700;">Genomic Analysis:</strong> Analyzing an individual's genetic makeup to predict disease susceptibility and drug response.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.38 0 2.5 1.12 2.5 2.5S13.38 10 12 10 9.5 8.88 9.5 7.5 10.62 5 12 5zm-3.5 6h7c.83 0 1.5.67 1.5 1.5v4.5H8v-4.5c0-.83.67-1.5 1.5-1.5z"/></svg>
-                    <strong>Precision Treatment Plans:</strong> Developing customized treatment strategies, including drug dosages and therapeutic interventions, based on a patient's unique data profile.
+                    <strong style="color: #FFD700;">Precision Treatment Plans:</strong> Developing customized treatment strategies, including drug dosages and therapeutic interventions, based on a patient's unique data profile.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.38 0 2.5 1.12 2.5 2.5S13.38 10 12 10 9.5 8.88 9.5 7.5 10.62 5 12 5zm-3.5 6h7c.83 0 1.5.67 1.5 1.5v4.5H8v-4.5c0-.83.67-1.5 1.5-1.5z"/></svg>
-                    <strong>Predictive Analytics for Outcomes:</strong> Foreseeing how a patient might respond to different treatments, allowing for proactive adjustments.
+                    <strong style="color: #FFD700;">Predictive Analytics for Outcomes:</strong> Foreseeing how a patient might respond to different treatments, allowing for proactive adjustments.
                 </li>
             </ul>
         </div>
@@ -294,20 +295,20 @@
     <div id="operations-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button">&times;</button>
-            <h3 class="text-3xl font-bold text-blue-600 mb-4">Operational Efficiency</h3>
-            <p class="text-gray-700 text-lg mb-4">AI streamlines administrative tasks and optimizes resource management within healthcare systems.</p>
-            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <h3 class="text-3xl font-bold mb-4" style="color: #FFD700;">Operational Efficiency</h3>
+            <p class="text-lg mb-4" style="color: #DAA520;">AI streamlines administrative tasks and optimizes resource management within healthcare systems.</p>
+            <ul class="list-disc pl-5 space-y-2" style="color: #DAA520;">
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M19 12h-2V8h-2v4h-2V8h-2v4H9V8H7v4H5V8H3v8h18V8h-2v4zm0 2h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zM5 4h14v2H5z"/></svg>
-                    <strong>Resource Allocation:</strong> Optimizing scheduling of staff, operating rooms, and equipment based on demand prediction.
+                    <strong style="color: #FFD700;">Resource Allocation:</strong> Optimizing scheduling of staff, operating rooms, and equipment based on demand prediction.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M19 12h-2V8h-2v4h-2V8h-2v4H9V8H7v4H5V8H3v8h18V8h-2v4zm0 2h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zM5 4h14v2H5z"/></svg>
-                    <strong>Supply Chain Management:</strong> Improving inventory control and forecasting, reducing waste and shortages.
+                    <strong style="color: #FFD700;">Supply Chain Management:</strong> Improving inventory control and forecasting, reducing waste and shortages.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M19 12h-2V8h-2v4h-2V8h-2v4H9V8H7v4H5V8H3v8h18V8h-2v4zm0 2h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zm-4 0h-2v2h2v-2zM5 4h14v2H5z"/></svg>
-                    <strong>Administrative Automation:</strong> Automating tasks like billing, patient intake, and claims processing, freeing up human staff.
+                    <strong style="color: #FFD700;">Administrative Automation:</strong> Automating tasks like billing, patient intake, and claims processing, freeing up human staff.
                 </li>
             </ul>
         </div>
@@ -316,20 +317,20 @@
     <div id="patient-engagement-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button">&times;</button>
-            <h3 class="text-3xl font-bold text-blue-600 mb-4">Patient Engagement & Remote Monitoring</h3>
-            <p class="text-gray-700 text-lg mb-4">AI-powered tools enhance patient interaction and enable continuous health monitoring.</p>
-            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <h3 class="text-3xl font-bold mb-4" style="color: #FFD700;">Patient Engagement & Remote Monitoring</h3>
+            <p class="text-lg mb-4" style="color: #DAA520;">AI-powered tools enhance patient interaction and enable continuous health monitoring.</p>
+            <ul class="list-disc pl-5 space-y-2" style="color: #DAA520;">
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5zM12 7c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2z"/></svg>
-                    <strong>AI Chatbots:</strong> Providing instant answers to patient queries, scheduling appointments, and offering preliminary symptom checks.
+                    <strong style="color: #FFD700;">AI Chatbots:</strong> Providing instant answers to patient queries, scheduling appointments, and offering preliminary symptom checks.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5zM12 7c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2z"/></svg>
-                    <strong>Wearable Integration:</strong> Analyzing data from wearables for remote patient monitoring, detecting anomalies, and alerting healthcare providers.
+                    <strong style="color: #FFD700;">Wearable Integration:</strong> Analyzing data from wearables for remote patient monitoring, detecting anomalies, and alerting healthcare providers.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5zM12 7c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2z"/></svg>
-                    <strong>Personalized Health Coaching:</strong> AI-driven apps offering tailored advice on diet, exercise, and medication adherence.
+                    <strong style="color: #FFD700;">Personalized Health Coaching:</strong> AI-driven apps offering tailored advice on diet, exercise, and medication adherence.
                 </li>
             </ul>
         </div>
@@ -338,20 +339,20 @@
     <div id="research-dev-modal" class="modal-overlay">
         <div class="modal-content">
             <button class="close-button">&times;</button>
-            <h3 class="text-3xl font-bold text-blue-600 mb-4">Research & Development</h3>
-            <p class="text-gray-700 text-lg mb-4">AI revolutionizes medical research by processing vast amounts of scientific literature and data, uncovering new insights.</p>
-            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+            <h3 class="text-3xl font-bold mb-4" style="color: #FFD700;">Research & Development</h3>
+            <p class="text-lg mb-4" style="color: #DAA520;">AI revolutionizes medical research by processing vast amounts of scientific literature and data, uncovering new insights.</p>
+            <ul class="list-disc pl-5 space-y-2" style="color: #DAA520;">
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    <strong>Literature Review & Synthesis:</strong> Rapidly sifting through millions of research papers to identify connections and extract relevant information.
+                    <strong style="color: #FFD700;">Literature Review & Synthesis:</strong> Rapidly sifting through millions of research papers to identify connections and extract relevant information.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    <strong>Hypothesis Generation:</strong> Assisting researchers in forming new hypotheses by identifying previously unseen correlations in complex biological data.
+                    <strong style="color: #FFD700;">Hypothesis Generation:</strong> Assisting researchers in forming new hypotheses by identifying previously unseen correlations in complex biological data.
                 </li>
                 <li>
                     <svg class="icon-small" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    <strong>Data Analysis & Interpretation:</strong> Automating the analysis of large-scale experimental data, from genomics to clinical trial results.
+                    <strong style="color: #FFD700;">Data Analysis & Interpretation:</strong> Automating the analysis of large-scale experimental data, from genomics to clinical trial results.
                 </li>
             </ul>
         </div>
